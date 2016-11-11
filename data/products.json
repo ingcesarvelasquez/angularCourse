@@ -1,0 +1,37 @@
+[
+{
+	"name": "Dodecahedron",
+	"price": 2.95,
+	"description": "Un dodecaedro es un poliedro de doce caras, convexo o cóncavo. Sus caras han de ser polígonos de once lados o menos",
+	"images": [{"full": "dodecahedron.gif"},{"thumb": "dodecahedron.gif"}],
+	"reviews":[
+		{
+			"stars": 5,
+			"body": "I love this product",
+			"autor": "joe@thomas.com"
+		},
+		{
+			"stars": 1,
+			"body": "this product sucks",
+			"autor": "tim@hater.com"
+		}
+	],
+	"canPurchase": true,
+	"soldOut": false
+},
+{
+	"name": "Malachite",
+	"price": 19.13,
+	"description": "Malachite, with its beautiful, rich green color, leaves no doubt of its importance as a jewel. Its opaque strength and power demands respect.",
+	"images": [{"full": "malachite.jpg"},{"thumb": "malachite.jpg"}],
+	"canPurchase": true,
+	"soldOut": false
+},
+{
+	"name": "Titanium Cobalt",
+	"price": 119.55,
+	"description": "This is Titanium Cobalt Blue Quartz Cluster. Titanium Quartz is natural quartz that has been heat infused with rare metals in a vacuum chamber.",
+	"images": [{"full": "titanium_cobalt.jpg"},{"thumb": "titanium_cobalt.jpg"}],
+	"canPurchase": true,
+	"soldOut": false
+}]

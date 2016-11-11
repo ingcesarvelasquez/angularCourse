@@ -1,0 +1,19 @@
+<div class="panel-body">
+		<div class="col-md-3">
+			<img width="95%" ng-src="{{product.images[0].full}}">
+		</div>
+
+		<div class="col-md-3">
+			<div>
+				<h3 product-title></h3>
+				<h2> {{product.price | currency}} </h2>
+				<button class="btn btn-success" ng-show="{{product.canPurchase}}"> Add to Cart</button>	
+			</div>
+		</div>
+		<div class="col-md-1">&nbsp;</div>
+		<div class="col-md-5">
+			<product-panels>
+				
+			</product-panels>
+		</div>
+  </div>
