@@ -26,22 +26,17 @@
 			controllerAs: 'panel'
 		};
 	});
-	app.directive('panelBody', function(){
+	app.directive('panelBody', function(localStorageHandler){
 		return{
 			restrict: 'E',
 			templateUrl:'panel-body.html',
-			
+			controller:function(){
+
+				this.addToCart = function(product){
+					localStorageHandler.setProduct(product);
+				};
+			},
+			controllerAs: "title"
 		};
 	});
-
-	app.controller('CarController', ['',function(){
-
-	}]);
-
-
-
-
-
-
-
 })();

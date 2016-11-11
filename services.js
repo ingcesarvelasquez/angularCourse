@@ -14,10 +14,22 @@
 			},
 			removeProduct: function(index) {
 				$localStorage.products.splice(index, 1);
-			}
-
-
+			},
 		}
 
 	}]);
+
+
+	app.service('ProductsData', ['$http', function($http){
+		return {
+			getData: function(){
+			return $http.get('./data/products.json').success(function(data){
+				return data;
+			});
+			},
+		}
+
+	}]);
+
+
 })();

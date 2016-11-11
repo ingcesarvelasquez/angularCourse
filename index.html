@@ -5,8 +5,10 @@
 	<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
 <body ng-controller="StoreController as store">
+<div> <h3> <span class="glyphicon glyphicon-shopping-cart"></span> Total Products in Cart: {{store.totalProducts.length}}</h3> </div>
 <!-- <button class="btn btn-default" ng-click="store.orderProduct">Ordenar</button>	 -->
 <div class="col-md-12 panel panel-success" ng-repeat="product in store.products | orderBy: '+price'" ng-hide="product.soldOut">
+
   <panel-body>
   
   </panel-body>

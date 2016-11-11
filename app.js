@@ -1,10 +1,13 @@
 (function(){
 	var app = angular.module('store', ['ngStorage','store-products', 'store-services']);
 
-	app.controller('StoreController', ['$http' , function($http){
+	app.controller('StoreController', ['localStorageHandler', 'ProductsData' , function( localStorageHandler, ProductsData){
 		var store = this;
-		$http.get('./data/products.json').success(function(data){
-			store.products = data;
+		store.totalProducts = localStorageHandler.getProducts();
+		
+		ProductsData.getData().then(function(response){
+			console.log(response);
+			store.products = response.data;
 		});
 
 	}]);
